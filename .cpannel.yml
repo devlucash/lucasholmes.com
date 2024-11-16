@@ -1,4 +1,4 @@
 deployment:
-  branch: main
-  username: your-cpanel-username
-  password: your-cpanel-password
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp index.html $DEPLOYPATH
